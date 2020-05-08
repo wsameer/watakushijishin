@@ -21,6 +21,19 @@ body {
   background-color: #2D3031;
 }
 
+.container-fluid .baner {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container-fluid .baner {
+    position: fixed;
+    right: 50px;
+    top: 30px;
+    display: block;
+  }
+}
+
 .site-header {
   position: fixed;
   top: 50px;
@@ -109,6 +122,10 @@ p.lead {
   outline-color: #525759;
 }
 
+#sideNav .navbar-collapse {
+  margin-left: 10px;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -139,6 +156,7 @@ p.lead {
     margin-bottom: 230px;
     margin-top: 180px;
     padding-left: 40px;
+    margin-left: 0px;
   }
   #sideNav .navbar-collapse .navbar-nav {
     text-align: left;

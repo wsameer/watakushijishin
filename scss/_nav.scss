@@ -13,10 +13,12 @@
       outline-color: lighten($sw-dark, 15%);
     }
   }
-}
 
-@media (min-width: 992px) {
-  #sideNav {
+  .navbar-collapse {
+    margin-left: 10px;
+  }
+
+  @include lg {
     text-align    : center;
     position      : fixed;
     top           : 0;
@@ -47,6 +49,7 @@
       margin-bottom: 230px;
       margin-top   : 180px;
       padding-left : 40px;
+      margin-left  : 0px;
 
       .navbar-nav {
         text-align    : left;

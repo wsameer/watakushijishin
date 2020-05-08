@@ -15,6 +15,17 @@ body {
 
 .container-fluid {
   background-color: $sw-dark;
+
+  .baner {
+    display: none;
+
+    @include md {
+      position: fixed;
+      right   : 50px;
+      top     : 30px;
+      display : block;
+    }
+  }
 }
 
 .site-header {
