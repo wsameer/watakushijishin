@@ -1,0 +1,45 @@
+// Mixins
+
+@mixin body-font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin heading-font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin box-shadow($shadows...) {
+  -webkit-box-shadow: $shadows;
+  -moz-box-shadow   : $shadows;
+  -ms-box-shadow    : $shadows;
+  -o-box-shadow     : $shadows;
+  box-shadow        : $shadows;
+}

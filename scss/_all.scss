@@ -1,0 +1,376 @@
+/**
+  RESUME SECTION
+*/
+section.resume-section {
+  min-height : 100vh;
+  padding    : 3rem 2rem;
+  padding-top: 5rem;
+
+  @include md {
+    min-height: 100vh;
+    padding   : 3rem 2rem;
+  }
+
+  @include lg {
+    padding-top   : 3rem;
+    padding-bottom: 3rem;
+    padding       : 5rem 6rem;
+    border-left   : 1px solid $sw-dark-2;
+  }
+
+  .resume-item {
+    .resume-date {
+      min-width: 18rem;
+
+      @include md {
+        min-width: 18rem;
+      }
+    }
+  }
+}
+
+/**
+ HOME
+ */
+#home {
+
+  h1,
+  h2 {
+    font-size  : 3rem;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    h1,
+    h2 {
+      font-size  : 2.2rem;
+      font-weight: 400;
+    }
+  }
+
+  .name {
+    font-size     : 6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .name {
+      font-size     : 3rem;
+      letter-spacing: normal;
+    }
+  }
+
+  .social-icons {
+    a {
+      display      : inline-block;
+      padding-right: 2.3rem;
+      color        : $white;
+      border-radius: 100%;
+      text-align   : center;
+      font-size    : 1.5rem;
+      line-height  : 3.5rem;
+      margin-right : 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $info;
+      }
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom  : 40px;
+    left    : 0;
+    width   : 100%;
+    z-index : 1;
+
+    &.light {
+      span {
+        color: $sw-dark;
+      }
+
+      .mouse {
+        border-color: $mat-dark-lite;
+
+        .wheel {
+          background: $mat-dark-lite;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .scroll-down {
+      padding-left: 250px;
+    }
+  }
+
+  @-webkit-keyframes ani-mouse {
+    0% {
+      top: 29%;
+    }
+
+    15% {
+      top: 50%;
+    }
+
+    50% {
+      top: 50%;
+    }
+
+    100% {
+      top: 29%;
+    }
+  }
+
+  @-moz-keyframes ani-mouse {
+    0% {
+      top: 29%;
+    }
+
+    15% {
+      top: 50%;
+    }
+
+    50% {
+      top: 50%;
+    }
+
+    100% {
+      top: 29%;
+    }
+  }
+
+  @keyframes ani-mouse {
+    0% {
+      top: 29%;
+    }
+
+    15% {
+      top: 50%;
+    }
+
+    50% {
+      top: 50%;
+    }
+
+    100% {
+      top: 29%;
+    }
+  }
+
+  .mouse-wrapper {
+    color     : $white;
+    font-size : 14px;
+    display   : block;
+    max-width : 100px;
+    margin    : auto;
+    text-align: center;
+
+
+    &:hover {
+      color          : $white;
+      text-decoration: none;
+    }
+
+    span {
+      color: $white;
+    }
+  }
+
+  .mouse {
+    border       : solid 2px $white;
+    border-radius: 16px;
+    display      : block;
+    margin       : auto;
+    margin-top   : 10px;
+    height       : 26px;
+    position     : relative;
+    width        : 20px;
+
+    .wheel {
+      background       : $white;
+      border-radius    : 100%;
+      display          : block;
+      position         : absolute;
+      top              : 8px;
+      left             : 50%;
+      transform        : translateX(-50%);
+      height           : 4px;
+      width            : 4px;
+      -webkit-animation: ani-mouse 2s linear infinite;
+      -moz-animation   : ani-mouse 2s linear infinite;
+      animation        : ani-mouse 2s linear infinite;
+    }
+  }
+
+}
+
+/** 
+  ABOUT ME 
+*/
+.about-me {
+  .summary-card {
+    .rounded {
+      border-radius   : 20px !important;
+      background-color: $sw-dark !important;
+    }
+  }
+
+  .avatar-wrap {
+    img {
+      background-color: $sw-dark-2;
+      margin          : 20px;
+      border-radius   : 50%;
+      height          : 200px;
+
+      @include md {
+        height: 300px;
+      }
+    }
+  }
+
+  p.lead {
+    text-align    : left;
+    font-weight   : 400;
+    letter-spacing: normal;
+    line-height   : 2;
+
+    @include md {
+      text-align: justify;
+    }
+  }
+}
+
+/**
+ SKILLS
+*/
+.my-skills {
+  .dev-icons {
+    font-size: 3rem;
+
+    .list-inline-item {
+      padding-right: 10px;
+
+      img {
+        height    : 48px;
+        margin-top: -10px;
+      }
+    }
+  }
+}
+
+/**
+  EXPERIENCE AND COLLEGE
+*/
+.my-experience {
+
+  .timeline {
+    position: relative;
+    padding : 30px;
+
+    .timeline-container {
+      padding-left    : 50px;
+      margin-bottom   : 50px;
+      position        : relative;
+      background-color: inherit;
+      width           : 100%;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .content {
+      position: relative;
+
+      .list-group {
+        .list-group-item {
+          font-size     : 14px;
+          font-weight   : 200;
+          line-height   : 22px;
+          padding       : 4px 0;
+          border        : none;
+          letter-spacing: normal;
+        }
+
+        .multi-collapse-exp {
+          margin-left: 15px;
+          padding    : 6px 0;
+
+          &:before {
+            content  : "\25BA \0020";
+            font-size: 8px;
+            position : absolute;
+            top      : 7px;
+            left     : -15px;
+          }
+        }
+      }
+
+      .title {
+        font-size    : 20px;
+        margin-top   : 10px;
+        font-weight  : 500;
+        margin-bottom: 2px;
+
+        a {
+          color: $sw-lite;
+        }
+      }
+
+      .sub-title {
+        font-weight  : 400;
+        margin-bottom: 8px;
+        font-size    : 18px;
+      }
+
+      .time {
+        color    : $sw-lite-grey;
+        font-size: 14px;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    span.line {
+      position        : absolute;
+      width           : 1px;
+      background-color: $pink;
+      top             : 30px;
+      bottom          : 30px;
+      left            : 34px;
+    }
+  }
+
+  .timeline.edu .timeline-container::after {
+    content    : '\e019';
+    background : $sw-dark;
+    font-family: 'simple-line-icons';
+    font-size  : 24px;
+    color      : $pink;
+    position   : absolute;
+    left       : -7px;
+    top        : 0;
+    z-index    : 1;
+  }
+
+  .timeline.exp .timeline-container::after {
+    content    : '\e04b';
+    background : $sw-dark;
+    font-family: 'simple-line-icons';
+    font-size  : 24px;
+    color      : $pink;
+    position   : absolute;
+    left       : -7px;
+    top        : 0;
+    z-index    : 1;
+  }
+}

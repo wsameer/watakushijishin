@@ -1,0 +1,87 @@
+// Global styling for this template
+
+body {
+  @include body-font;
+  padding-top: 54px;
+  color      : $sw-lite;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top : 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+.container-fluid {
+  background-color: $sw-dark;
+}
+
+.site-header {
+  position   : fixed;
+  top        : 50px;
+  font-size  : 32px;
+  font-weight: bold;
+  left       : 60px;
+}
+
+p.lead {
+  font-size  : 1.15rem;
+  font-weight: 400;
+  text-align : justify;
+  line-height: 30px;
+}
+
+.bgx-dark {
+  background-color: $sw-dark;
+}
+
+.bgx-light {
+  background-color: $sw-lite;
+}
+
+.bgx-orange {
+  background-color: $sw-orange;
+}
+
+.font-white {
+  color: $sw-lite !important;
+}
+
+.clrx-orange {
+  color: $sw-orange;
+}
+
+.subheading {
+  text-transform: none;
+  font-weight   : 400;
+  @include heading-font;
+  font-size: 1.5rem;
+}
+
+.btn-round {
+  border-radius: 20px;
+  padding      : 8px 26px;
+}
+
+.rounded {
+  border-radius   : 20px !important;
+  background-color: $sw-dark !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Shadows */
+.shadow-dark {
+  @include box-shadow(0px 5px 20px 0px rgba(69, 67, 96, 0.1));
+}
+
+.shadow-light {
+  @include box-shadow(0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
+}
+
+.shadow-lightest {
+  @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24));
+}

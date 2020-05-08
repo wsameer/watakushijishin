@@ -1,0 +1,30 @@
+.btn-primary {
+  background-color: $sw-orange !important;
+  color           : $sw-lite !important;
+  border-color    : $sw-orange !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  color           : $sw-lite !important;
+  border-color    : $sw-orange !important;
+}
+
+.navbar-dark {
+  background-color: $sw-dark !important;
+  color           : $sw-lite !important;
+}
+
+.text-primary {
+  color: $sw-dark !important;
+}
+
+a {
+  color: $sw-dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($sw-dark, 15%);
+  }
+}
