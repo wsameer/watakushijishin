@@ -1,6 +1,6 @@
 #sideNav {
   .navbar-nav .nav-item .nav-link {
-    font-weight   : 400;
+    font-weight   : $font-med;
     letter-spacing: 0.05rem;
 
     i {
@@ -62,7 +62,7 @@
           .nav-link {
             display       : block;
             padding       : 0.7rem 0.5rem;
-            font-weight   : 400;
+            font-weight   : $font-med;
             letter-spacing: .05rem;
             line-height   : 2;
 

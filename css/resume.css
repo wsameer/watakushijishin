@@ -27,6 +27,8 @@ body {
 
 @media (min-width: 768px) {
   .container-fluid .baner {
+    z-index: 4;
+    background: #2D3031;
     position: fixed;
     right: 50px;
     top: 30px;
@@ -73,7 +75,13 @@ p.lead {
   text-transform: none;
   font-weight: 400;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .subheading {
+    font-size: 1.5rem;
+  }
 }
 
 .btn-round {
@@ -228,7 +236,7 @@ section.resume-section .resume-item .resume-date {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) {
   #home h1,
   #home h2 {
     font-size: 2.2rem;
@@ -237,14 +245,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 #home .name {
-  font-size: 6rem;
-  letter-spacing: 0.1rem;
+  font-size: 2.7rem;
+  letter-spacing: normal;
+  margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 768px) {
   #home .name {
-    font-size: 3rem;
-    letter-spacing: normal;
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -275,6 +284,12 @@ section.resume-section .resume-item .resume-date {
   z-index: 1;
 }
 
+@media (min-width: 992px) {
+  #home .scroll-down {
+    padding-left: 250px;
+  }
+}
+
 #home .scroll-down.light span {
   color: #2D3031;
 }
@@ -285,12 +300,6 @@ section.resume-section .resume-item .resume-date {
 
 #home .scroll-down.light .mouse .wheel {
   background: #313131;
-}
-
-@media (min-width: 992px) {
-  #home .scroll-down {
-    padding-left: 250px;
-  }
 }
 
 @-webkit-keyframes ani-mouse {
@@ -411,9 +420,26 @@ section.resume-section .resume-item .resume-date {
   padding-right: 10px;
 }
 
+.my-skills .dev-icons .list-inline-item i {
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  .my-skills .dev-icons .list-inline-item i {
+    font-size: 48px;
+  }
+}
+
 .my-skills .dev-icons .list-inline-item img {
-  height: 48px;
+  height: 36px;
   margin-top: -10px;
+}
+
+@media (min-width: 768px) {
+  .my-skills .dev-icons .list-inline-item img {
+    height: 48px;
+    margin-top: -10px;
+  }
 }
 
 /**
