@@ -1,6 +1,6 @@
 {
   "title": "my-portfolio",
-  "name": "watakushijishin",
+  "name": "v1",
   "version": "1.0.0",
   "scripts": {
     "start": "node_modules/.bin/gulp watch"
@@ -14,19 +14,15 @@
     "sameer",
     "waskar"
   ],
-  "homepage": "https://wsameer.github.io/watakushijishin/",
   "bugs": {
-    "url": "https://github.com/wsameer/watakushijishin/issues",
+    "url": "https://github.com/wsameer/v1/issues",
     "email": "dev.wsameer@gmail.com"
   },
   "license": "MIT",
   "author": "Sameer Waskar <dev.wsameer@gmail.com>",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wsameer/watakushijishin"
+    "url": "https://github.com/wsameer/v1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.10.2",
