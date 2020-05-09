@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Start Bootstrap - my-portfolio v1.0.0 ()
+ * Copyright 2013-2020 Sameer Waskar <dev.wsameer@gmail.com>
+ * Licensed under MIT (https://github.com/BlackrockDigital/v1/blob/master/LICENSE)
  */
 
 body {
@@ -431,14 +431,14 @@ section.resume-section .resume-item .resume-date {
 }
 
 .my-skills .dev-icons .list-inline-item img {
-  height: 36px;
-  margin-top: -10px;
+  height: 38px;
+  margin-top: -7px;
 }
 
 @media (min-width: 768px) {
   .my-skills .dev-icons .list-inline-item img {
-    height: 48px;
-    margin-top: -10px;
+    height: 50px;
+    margin-top: -16px;
   }
 }
 
@@ -468,19 +468,21 @@ section.resume-section .resume-item .resume-date {
 
 .my-experience .timeline .content .list-group .list-group-item {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 22px;
   padding: 4px 0;
   border: none;
   letter-spacing: normal;
 }
 
-.my-experience .timeline .content .list-group .multi-collapse-exp {
+.my-experience .timeline .content .list-group .multi-collapse-exp,
+.my-experience .timeline .content .list-group .multi-collapse-edu {
   margin-left: 15px;
   padding: 6px 0;
 }
 
-.my-experience .timeline .content .list-group .multi-collapse-exp:before {
+.my-experience .timeline .content .list-group .multi-collapse-exp:before,
+.my-experience .timeline .content .list-group .multi-collapse-edu:before {
   content: "\25BA \0020";
   font-size: 8px;
   position: absolute;
@@ -545,6 +547,11 @@ section.resume-section .resume-item .resume-date {
   left: -7px;
   top: 0;
   z-index: 1;
+}
+
+.footer {
+  padding: 20px;
+  font-size: 14px;
 }
 
 .btn-primary {
