@@ -1,32 +1,32 @@
 {
-  "title": "Resume",
-  "name": "startbootstrap-resume",
-  "version": "5.0.8",
+  "title": "my-portfolio",
+  "name": "watakushijishin",
+  "version": "1.0.0",
   "scripts": {
     "start": "node_modules/.bin/gulp watch"
   },
-  "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+  "description": "Personal website of Sameer Waskar",
   "keywords": [
-    "css",
+    "portfolio",
     "sass",
     "html",
     "responsive",
-    "theme",
-    "template"
+    "sameer",
+    "waskar"
   ],
-  "homepage": "https://startbootstrap.com/template-overviews/resume",
+  "homepage": "https://wsameer.github.io/watakushijishin/",
   "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-    "email": "feedback@startbootstrap.com"
+    "url": "https://github.com/wsameer/watakushijishin/issues",
+    "email": "dev.wsameer@gmail.com"
   },
   "license": "MIT",
-  "author": "Start Bootstrap",
+  "author": "Sameer Waskar <dev.wsameer@gmail.com>",
   "contributors": [
     "David Miller (http://davidmiller.io/)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+    "url": "https://github.com/wsameer/watakushijishin"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.10.2",
