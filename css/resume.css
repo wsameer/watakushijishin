@@ -117,6 +117,10 @@ p.lead {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.shadow-work {
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   letter-spacing: 0.05rem;
@@ -625,6 +629,115 @@ section.resume-section .resume-item .resume-date {
   left: -7px;
   top: 0;
   z-index: 1;
+}
+
+/**
+ WORKS
+*/
+#works .work-highlights .project-item {
+  margin-bottom: 60px;
+}
+
+#works .work-highlights .project-item .featured {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FE5029;
+}
+
+#works .work-highlights .project-item .project-name {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+#works .work-highlights .project-item .desc-panel {
+  background-color: #2D3031;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 25px;
+  border-radius: 4px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+#works .work-highlights .project-item .desc-panel .list-group {
+  background-color: transparent;
+}
+
+#works .work-highlights .project-item .desc-panel .list-group .list-group-item {
+  background-color: transparent;
+  padding: 2px 0;
+  border: none;
+}
+
+#works .work-highlights .project-item img {
+  cursor: pointer;
+  opacity: 0.6;
+  width: 100%;
+  transition-delay: 500ms;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+#works .work-highlights .project-item img:hover {
+  opacity: 1;
+}
+
+#works .work-highlights .project-item .push-left {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  #works .work-highlights .project-item .push-left {
+    margin-left: -10%;
+  }
+}
+
+#works .work-highlights .project-item .left-side {
+  text-align: left;
+  margin: 0;
+}
+
+#works .work-highlights .project-item .left-side .tech-stack {
+  margin-top: 20px;
+}
+
+#works .work-highlights .project-item .left-side .tech-stack .badge {
+  background-color: #FE5029;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+#works .work-highlights .project-item .right-side {
+  text-align: right;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  #works .work-highlights .project-item .right-side {
+    padding-right: 40px;
+    margin-left: -10%;
+  }
+}
+
+#works .work-highlights .project-item .right-side .tech-stack {
+  margin-top: 20px;
+}
+
+#works .work-highlights .project-item .right-side .tech-stack .badge {
+  background-color: #FE5029;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .footer {
