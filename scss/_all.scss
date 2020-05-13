@@ -565,6 +565,20 @@ section.resume-section {
           }
         }
       }
+
+      .open-app {
+        margin-top: 20px;
+
+        a {
+          font-size: 22px;
+          color    : #fff;
+          padding-left: 10px;
+
+          &:hover {
+            color: $sw-orange;
+          }
+        }
+      }
     }
   }
 }

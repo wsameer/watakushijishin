@@ -740,6 +740,20 @@ section.resume-section .resume-item .resume-date {
   margin-left: 5px;
 }
 
+#works .work-highlights .project-item .open-app {
+  margin-top: 20px;
+}
+
+#works .work-highlights .project-item .open-app a {
+  font-size: 22px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+#works .work-highlights .project-item .open-app a:hover {
+  color: #FE5029;
+}
+
 .footer {
   padding: 20px;
   font-size: 14px;
