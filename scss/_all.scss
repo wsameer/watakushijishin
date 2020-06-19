@@ -479,9 +479,9 @@ section.resume-section {
         background-color: $sw-dark;
         position        : relative;
         z-index         : 2;
-        font-size       : 15px;
+        font-size       : 14px;
         transition      : all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-        padding         : 25px;
+        padding         : 20px;
         border-radius   : 4px;
         font-weight     : $font-lite;
         line-height     : 22px;
@@ -566,12 +566,11 @@ section.resume-section {
       }
 
       .open-app {
-        margin: 20px 0;
+        margin: 15px 0;
 
         a {
-          font-size: 22px;
+          font-size: 16px;
           color    : #fff;
-          padding-left: 10px;
 
           &:hover {
             color: $sw-orange;
