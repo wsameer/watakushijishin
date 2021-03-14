@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - my-portfolio v1.0.0 ()
- * Copyright 2013-2020 Sameer Waskar <dev.wsameer@gmail.com>
+ * Copyright 2013-2021 Sameer Waskar <dev.wsameer@gmail.com>
  * Licensed under MIT (https://github.com/BlackrockDigital/v1/blob/master/LICENSE)
  */
 
